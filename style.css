@@ -65,3 +65,47 @@ footer a:hover { color: var(--ocean); }
     header h1 { font-size: 1.5rem; }
     .filter-btn { min-width: 100%; }
 }
+/* --- Estilo do Menu Lateral --- */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: -250px; /* Ele começa escondido à esquerda */
+    background-color: #0f0f0f;
+    border-right: 2px solid #7d2ae8;
+    transition: 0.4s ease;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #e0e0e0;
+    display: block;
+    transition: 0.3s;
+    border-bottom: 1px solid #222;
+}
+
+.sidebar a:hover {
+    background-color: #7d2ae8;
+    color: white;
+}
+
+/* Botão MENU que fica flutuando na tela */
+.open-btn {
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #7d2ae8;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1500;
+    border-radius: 5px;
+    font-weight: bold;
+}
